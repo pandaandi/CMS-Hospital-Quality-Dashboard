@@ -1,0 +1,15 @@
+{
+  "title": "CMS FY 2026 Hospital Readmissions & Patient Experience Dashboard",
+  "source": "Centers for Medicare & Medicaid Services Provider Data",
+  "released": "2026-05-13",
+  "updated": "2026-04 to 2026-05 provider-data release cycle",
+  "hospitals": 5432,
+  "hrrp_measure_rows": 18330,
+  "hospitals_with_hrrp": 2833,
+  "states": 51,
+  "avg_excess_ratio": 1.002,
+  "above_expected_measure_pct": 48.1,
+  "avg_recommend_pct": 70.906,
+  "avg_rating": 3.207,
+  "date_range": "07/01/2021 - 06/30/2024 for FY 2026 HRRP measures"
+}
