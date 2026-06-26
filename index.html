@@ -6,9 +6,9 @@
 <title>CMS FY 2026 Hospital Readmissions & Patient Experience Dashboard</title>
 <style>
 :root {
-  --bg:#f7f8fb; --panel:#fff; --ink:#172033; --muted:#687386; --line:#dfe5ee;
-  --blue:#2563eb; --cyan:#0891b2; --green:#15803d; --amber:#b45309; --red:#b91c1c;
-  --soft-blue:#eaf1ff; --soft-red:#fff1f1; --soft-green:#edf8f1;
+    --bg:#f4fbff; --panel:#ffffff; --ink:#102033; --muted:#60758f; --line:#d8eaf6;
+  --blue:#2f80ed; --cyan:#38bdf8; --green:#0ea5e9; --amber:#60a5fa; --red:#1d4ed8;
+  --soft-blue:#e8f6ff; --soft-red:#eef7ff; --soft-green:#e6f7ff;
 }
 * { box-sizing:border-box; }
 body { margin:0; font-family:Inter, Arial, Helvetica, sans-serif; color:var(--ink); background:var(--bg); }
@@ -27,7 +27,7 @@ main { max-width:1360px; margin:0 auto; padding:22px 30px 44px; }
 .metric .value { font-size:28px; font-weight:800; margin-top:8px; }
 .metric .note { color:var(--muted); font-size:12px; margin-top:5px; }
 .info { display:inline-flex; align-items:center; justify-content:center; width:17px; height:17px; border-radius:50%; border:1px solid #9aa6b8; color:#526071; font-size:11px; cursor:help; position:relative; }
-.info:hover::after { content:attr(data-tip); position:absolute; left:0; top:22px; width:260px; background:#101828; color:#fff; padding:9px 10px; border-radius:7px; font-size:12px; line-height:1.35; z-index:20; text-transform:none; letter-spacing:0; font-weight:400; }
+.info:hover::after { content:attr(data-tip); position:absolute; left:0; top:22px; width:260px; background:#0f2a44; color:#fff; padding:9px 10px; border-radius:7px; font-size:12px; line-height:1.35; z-index:20; text-transform:none; letter-spacing:0; font-weight:400; }
 .filters { display:grid; grid-template-columns:130px 1fr 160px 180px; gap:10px; margin:0 0 16px; }
 select,input { width:100%; border:1px solid var(--line); border-radius:8px; padding:10px 11px; font-size:14px; background:#fff; }
 .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px; }
@@ -35,12 +35,12 @@ select,input { width:100%; border:1px solid var(--line); border-radius:8px; padd
 .bars { display:flex; flex-direction:column; gap:9px; }
 .barrow { display:grid; grid-template-columns:110px 1fr 65px; align-items:center; gap:10px; font-size:13px; }
 .bartrack { height:18px; border-radius:999px; overflow:hidden; background:#edf1f6; }
-.barfill { height:100%; background:linear-gradient(90deg,var(--cyan),var(--blue)); border-radius:999px; }
-.barfill.red { background:linear-gradient(90deg,#ef4444,var(--red)); }
-.barfill.amber { background:linear-gradient(90deg,#f59e0b,var(--amber)); }
-.scatter { height:330px; border:1px solid #edf1f5; border-radius:8px; position:relative; background:linear-gradient(#fff,#fbfcff); overflow:hidden; }
-.dot { position:absolute; width:9px; height:9px; border-radius:50%; background:var(--blue); opacity:.72; transform:translate(-50%,-50%); cursor:help; }
-.dot.risk { background:var(--red); opacity:.82; }
+.barfill { height:100%; background:linear-gradient(90deg,#7dd3fc,#2f80ed); border-radius:999px; }
+.barfill.red { background:linear-gradient(90deg,#93c5fd,#1d4ed8); }
+.barfill.amber { background:linear-gradient(90deg,#bae6fd,#3b82f6); }
+.scatter { height:330px; border:1px solid #edf1f5; border-radius:8px; position:relative; background:linear-gradient(#ffffff,#f1f9ff); overflow:hidden; }
+.dot { position:absolute; width:9px; height:9px; border-radius:50%; background:#38bdf8; opacity:.68; box-shadow:0 0 0 3px rgba(56,189,248,.12); transform:translate(-50%,-50%); cursor:help; }
+.dot.risk { background:#2563eb; opacity:.86; box-shadow:0 0 0 4px rgba(37,99,235,.14); }
 .dot:hover { width:13px; height:13px; opacity:1; z-index:4; }
 .axis { position:absolute; color:#667085; font-size:11px; }
 .axis.x { bottom:7px; left:50%; transform:translateX(-50%); }
@@ -56,7 +56,7 @@ th { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacin
 .small { color:var(--muted); font-size:12px; }
 .tabs { display:flex; gap:8px; margin-bottom:10px; flex-wrap:wrap; }
 .tab { border:1px solid var(--line); background:#fff; border-radius:999px; padding:7px 11px; cursor:pointer; font-weight:700; color:#435066; }
-.tab.active { background:#172033; color:#fff; border-color:#172033; }
+.tab.active { background:#1d4ed8; color:#fff; border-color:#1d4ed8; }
 footer { color:var(--muted); font-size:12px; padding-top:10px; border-top:1px solid var(--line); }
 @media(max-width:980px) { .story,.grid2,.grid3,.metrics,.filters { grid-template-columns:1fr; } .top,main { padding-left:16px; padding-right:16px; } }
 </style>
