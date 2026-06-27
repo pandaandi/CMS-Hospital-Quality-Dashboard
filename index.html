@@ -48,7 +48,7 @@ select,input { width:100%; border:1px solid var(--line); border-radius:8px; padd
 table { width:100%; border-collapse:collapse; font-size:13px; }
 th,td { padding:9px 7px; border-bottom:1px solid #edf1f5; text-align:left; vertical-align:top; }
 th { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.035em; cursor:pointer; user-select:none; }
-.pill { display:inline-block; padding:3px 7px; border-radius:999px; font-size:12px; font-weight:700; }
+.pill { display:inline-flex; align-items:center; justify-content:center; min-width:72px; min-height:32px; padding:4px 9px; border-radius:999px; font-size:12px; font-weight:800; line-height:1.15; text-align:center; font-variant-numeric:tabular-nums; }
 .pill.red { color:var(--red); background:var(--soft-red); }
 .pill.green { color:var(--green); background:var(--soft-green); }
 .pill.blue { color:#1d4ed8; background:var(--soft-blue); }
@@ -239,6 +239,7 @@ renderTable();
 </script>
 </body>
 </html>
+
 
 
 
