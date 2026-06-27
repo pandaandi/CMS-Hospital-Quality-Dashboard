@@ -4,10 +4,6 @@
 
 This portfolio project uses current CMS Provider Data to build an executive-friendly hospital quality dashboard focused on readmissions, patient experience, hospital ratings, and unplanned visit signals.
 
-## Why This Project
-
-The earlier UCI diabetes readmission project is useful for patient-level predictive modeling, but its encounter data ends in 2008. This CMS project is more current and stronger for storytelling because it uses CMS files released in 2026 for FY 2026 hospital quality reporting.
-
 ## Data Sources
 
 - CMS Hospital Readmissions Reduction Program, FY 2026
