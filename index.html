@@ -48,7 +48,7 @@ select,input { width:100%; border:1px solid var(--line); border-radius:8px; padd
 table { width:100%; border-collapse:collapse; font-size:13px; }
 th,td { padding:9px 7px; border-bottom:1px solid #edf1f5; text-align:left; vertical-align:top; }
 th { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.035em; cursor:pointer; user-select:none; }
-.pill { display:inline-flex; align-items:center; justify-content:center; min-width:72px; min-height:32px; padding:4px 9px; border-radius:999px; font-size:12px; font-weight:800; line-height:1.15; text-align:center; font-variant-numeric:tabular-nums; }
+.pill { display:inline-flex; flex-direction:column; align-items:center; justify-content:center; min-width:72px; min-height:38px; padding:4px 9px; border-radius:999px; font-size:12px; font-weight:800; line-height:1.12; text-align:center; font-variant-numeric:tabular-nums; } .pill .pill-score { display:block; margin-top:1px; }
 .pill.red { color:var(--red); background:var(--soft-red); }
 .pill.green { color:var(--green); background:var(--soft-green); }
 .pill.blue { color:#1d4ed8; background:var(--soft-blue); }
@@ -222,7 +222,7 @@ function renderTable() {
     return `<tr>
       <td><strong>${d.facility_name}</strong><div class="small">${d.city}, ${d.county} | ${d.ownership}</div></td>
       <td>${d.state}</td>
-      <td><span class="pill ${cls}">${risk} ${fmt(d.priority_score)}</span></td>
+      <td><span class="pill ${cls}"><span>${risk}</span><span class="pill-score">${fmt(d.priority_score)}</span></span></td>
       <td>${fmt(d.max_excess_ratio)}</td>
       <td>${d.above_expected_measures} / ${d.measure_count}</td>
       <td>${fmt(d.recommend_pct)}</td>
@@ -239,6 +239,7 @@ renderTable();
 </script>
 </body>
 </html>
+
 
 
 
