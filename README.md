@@ -46,3 +46,9 @@ CMS source portal: https://data.cms.gov/provider-data/
 ## Interview Pitch
 
 I built this CMS hospital quality dashboard because I wanted a more current healthcare analytics project than older patient-level datasets. The dashboard combines FY 2026 CMS readmission penalty data, HCAHPS patient recommendation scores, hospital ratings, and unplanned visit indicators. I designed it for both technical and non-technical users: leaders can quickly identify priority hospitals, while analysts can drill into condition-level readmission ratios and quality signals.
+
+## Copyright and Use
+
+Copyright © 2026 Andi Wang. All rights reserved.
+
+This project is shared for portfolio review purposes only. No part of this project may be copied, reused, redistributed, or presented as another person's work without written permission.
